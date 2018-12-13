@@ -1,0 +1,70 @@
+<div class="parent-child-layout">
+  <ul class="animation-ul">
+    <li class="bg-animation" *ngFor="let block of [1,2,3,4,5,6,7,8,9,10]"></li>
+  </ul>
+  <div class="parent-child-block">
+    <div class="parent-child-logo">
+      <img class="title" src="assets/images/image2.png">
+      <img class="gingerbread" src="assets/images/gingerbread.png">
+    </div>
+    <span class="parent-child-content">
+      <span class="two-content">
+        <section class="content" (click)="goLink('https://www.littlesun365.com/website/product_detail/4/24/35/26')">
+          <span class="content-block">
+              <img src="assets/images/card1.png">
+            </span>
+          <span class="content-titles">
+            <span class="title">快樂寶盒第1輯</span>
+            <span class="cont">和寶貝上街趣~</span>
+          </span>
+        </section>
+        <section class="content" (click)="goLink('https://www.littlesun365.com/website/product_detail/4/24/35/33')">
+          <span class="content-block">
+            <img src="assets/images/card2.png">
+          </span>
+          <span class="content-titles">
+            <span class="title">快樂寶盒第8輯</span>
+            <span class="cont">爸爸媽媽我也會!</span>
+          </span>
+        </section>
+      </span>
+      <span class="one-content">
+        <section class="content" (click)="goLink('https://www.littlesun365.com/website/product_detail/4/13/27/77')">
+          <span class="content-block">
+            <img class="all" *ngIf="allImg" src="assets/images/card3.png">
+            <img class="threeForTwo" *ngIf="twoImg" src="assets/images/card3for2.png">
+            <img class="threeThree" *ngIf="twoImg" src="assets/images/card3-3.png">
+            <img class="threeImg" *ngIf="threeImg" src="assets/images/card3-1.png">
+            <img class="threeImg" *ngIf="threeImg" src="assets/images/card3-2.png">
+            <img class="threeImg" *ngIf="threeImg" src="assets/images/card3-3.png">
+          </span>
+          <span class="content-titles">
+            <span class="title">智慧圖卡 生活認知</span>
+            <span class="cont">寶貝這樣做會更好</span>
+          </span>
+        </section>
+      </span>
+      <span class="two-content">
+        <section class="content" (click)="goLink('https://www.littlesun365.com/website/product_detail/4/13/27/79')">
+          <span class="content-block">
+            <img src="assets/images/card4.png">
+          </span>
+          <span class="content-titles">
+            <span class="title">智慧圖卡 社會關係</span>
+            <span class="cont">寶貝未來不是夢</span>
+          </span>
+        </section>
+        <section class="content" (click)="goLink('https://www.littlesun365.com/website/product_detail/4/24/35/31')">
+          <span class="content-block">
+            <img src="assets/images/card5.png">
+          </span>
+          <span class="content-titles">
+            <span class="title">快樂寶盒第6輯</span>
+            <span class="cont">認識家庭電器.工具</span>
+          </span>
+        </section>
+      </span>
+    </span>
+  </div>
+  <img class="parent-child-footer" src="assets/images/image3.png">
+</div>

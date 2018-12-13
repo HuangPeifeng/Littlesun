@@ -1,0 +1,306 @@
+.top-content-layout {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+  position: relative;
+  background-color: #f6d365;
+
+  @media only screen and (max-width: 1023px) {
+    padding: 0;
+  }
+
+  .blue-block {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    background-color: #a4e7f3;
+    z-index: 1;
+  }
+
+  .top-content-block {
+    width: calc(1024px - 2em);
+    display: flex;
+    flex-direction: column;
+
+    .top-content-ribbons {
+      width: 100%;
+      height: 64px;
+      background-image: url('/assets/images/ribbon.png');
+      background-repeat: repeat-x;
+      position: absolute;
+      left: 0;
+      -webkit-animation: slide 10s infinite;
+      animation: slide 10s infinite;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+    }
+
+    .top-content-white {
+      width: 100%;
+      height: 360px;
+      background-image: url('/assets/images/white.png');
+      background-repeat: repeat-x;
+      position: absolute;
+      left: 0;
+      bottom: -100px;
+      -webkit-animation: slide 10s infinite;
+      animation: slide 10s infinite;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+    }
+
+    .top-content {
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 5em 0;
+
+      @media only screen and (max-width: 1023px) {
+        padding: 5em 0 0 0;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .top-content-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .img {
+          width: 500px;
+          height: 310px;
+          background-image: url('/assets/images/image1.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 500px 310px;
+          padding: 0 50px;
+          position: relative;
+
+          @media only screen and (max-width: 1023px) {
+            width: calc(100vw - 2em);
+            margin: 0 1em;
+            padding: 0;
+            background-size: 100% 100%;
+          }
+
+          .star_l {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 230px;
+            -webkit-animation: flash 3s infinite;
+            animation: flash 3s infinite;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+          }
+
+          .star_r {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 230px;
+            -webkit-animation: flash 3s infinite;
+            animation: flash 3s infinite;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+          }
+        }
+
+        .content {
+          font-size: 20px;
+          // font-weight: bold;
+          color: #795548;
+          line-height: 1.5;
+          padding-top: 10px;
+
+          @media only screen and (max-width: 480px) {
+            font-size: 15px;
+          }
+        }
+
+        .top-content-buttons {
+          margin: 1em 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+
+          .gift1 {
+            position: absolute;
+            left: -10em;
+            bottom: 0;
+          }
+
+          .btn {
+            padding: 5px 10px;
+            margin: 0.5em;
+            cursor: pointer;
+            z-index: 2;
+
+            @media only screen and (max-width: 480px) {
+              width: 150px;
+            }
+          }
+        }
+      }
+
+      .top-content-right {
+        width: calc(1024px - 2em);;
+        height: 80%;
+        background-image: url(/assets/images/family.png);
+        background-repeat: no-repeat;
+        background-size: 1024px 328px;
+        background-position: bottom;
+        position: absolute;
+        left: 0;
+        bottom: -100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 1;
+
+        @media only screen and (max-width: 1023px) {
+          width: 100vw;
+          background-size: 100% 100%;
+          position: unset;
+          align-items: flex-start;
+          justify-content: flex-start;
+        }
+
+        .dialog1 {
+          padding: 0 5em;
+          opacity: 0;
+          -webkit-animation: dialog 5s infinite;
+          animation: dialog 5s infinite;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+
+          @media only screen and (max-width: 1023px) {
+            padding: 3em 10em;
+          }
+
+          @media only screen and (max-width: 768px) {
+            padding: 1em 3em;
+          }
+
+          @media only screen and (max-width: 560px) {
+            padding: 0 1em;
+          }
+        }
+
+        .dialog2 {
+          padding-right: 5em;
+          padding-left: 35em;
+          opacity: 0;
+          -webkit-animation: dialog2 5s infinite;
+          animation: dialog2 5s infinite;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+
+          @media only screen and (max-width: 1023px) {
+            padding-left: 30em;
+          }
+
+          @media only screen and (max-width: 768px) {
+            padding-left: 20em;
+          }
+
+          @media only screen and (max-width: 560px) {
+            padding-left: 15em;
+          }
+        }
+
+        .gift1 {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+
+          @media only screen and (max-width: 1023px) {
+            bottom: 3em;
+          }
+
+          @media only screen and (max-width: 768px) {
+            bottom: 2em;
+            width: 150px;
+          }
+
+          @media only screen and (max-width: 480px) {
+            bottom: 1em;
+            width: 100px;
+          }
+        }
+
+        .gift2 {
+          position: absolute;
+          bottom: 100px;
+          right: 22em;
+
+          @media only screen and (max-width: 1023px) {
+            bottom: 3em;
+            right: 0;
+          }
+
+          @media only screen and (max-width: 768px) {
+            bottom: 2em;
+            width: 150px;
+          }
+
+          @media only screen and (max-width: 480px) {
+            bottom: 1em;
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 10px 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dialog {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dialog2 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,14 @@
+<div class="footer-layout">
+  <span class="block" (click)="goLink('https://www.littlesun365.com/website/contact/1')">
+    <img src="assets/images/contact.png">
+    <span *ngIf="!isPhone">聯絡我們</span>
+  </span>
+  <span class="block" (click)="goLink('https://www.facebook.com/littlesun365/', true)">
+    <img src="assets/images/fb.png">
+    <span *ngIf="!isPhone">FB粉絲團</span>
+  </span>
+  <span class="block" (click)="goLink('https://www.youtube.com/channel/UCrbOGBzaxFVlMCtsyhsD8HA', true)">
+    <img src="assets/images/youtube.png">
+    <span *ngIf="!isPhone">Youtube</span>
+  </span>
+</div>

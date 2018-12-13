@@ -1,0 +1,74 @@
+<div class="main" [ngStyle]="{ 'background': setRedBg() }">
+  <div class="red-block-layout" #why>
+    <ul class="animation-ul">
+      <li class="bg-animation" *ngFor="let block of [1,2,3,4,5,6,7,8,9,10]"></li>
+    </ul>
+    <div class="red-block">
+      <img class="title-img" src="assets/images/red-title.png">
+      <span class="red-block-contents">
+        <section class="block">
+          <img class="img" src="assets/images/circle1.png">
+          <span class="title">寶貝握力訓練</span>
+          <span class="content">
+            <span>厚度剛剛好</span>
+            <span>適合訓練寶貝握力</span>
+          </span>
+        </section>
+        <section class="block">
+          <img class="img" src="assets/images/circle2.png">
+          <span class="title">視覺X語言雙發展</span>
+          <span class="content">
+            <span>透過圖卡</span>
+            <span>從眼睛到語言雙重訓練</span>
+          </span>
+        </section>
+        <section class="block">
+          <img class="img" src="assets/images/circle3.png">
+          <span class="title">提升寶貝專注力</span>
+          <span class="content">
+            <span>比起動畫</span>
+            <span>靜態圖卡更能培養專注力</span>
+          </span>
+        </section>
+      </span>
+    </div>
+  </div>
+  <div class="blogger-layout" [ngStyle]="{ 'background': setGreenBg() }">
+    <div class="blogger-block">
+      <img class="blogger-logo" src="assets/images/blog-title.png" #blog>
+      <span class="blogger-contents">
+        <section class="block start">
+          <img src="assets/images/blog1.png">
+          <span class="content-block">
+            <span class="title-red">小佳的幻想世界</span>
+            <span class="title-blue">共度親子時光，遊戲中學習</span>
+            <span class="content">對一個5歲小孩來說，不能用太艱深難懂的文字去解釋，所以就可以利用邏輯圖卡的方式，增加小孩學習玩樂的意願!!...<span class="more" (click)="goLink('https://www.tiffany0118.com/littlesun365/')">more</span></span>
+          </span>
+        </section>
+        <img class="dot" src="assets/images/dot.png">
+        <section class="block end">
+          <span class="content-block">
+            <span class="title-red">高妹。Simple Life Wonderland</span>
+            <span class="title-blue">讓學會的基礎認知更上層樓</span>
+            <span class="content">對於圖形、顏色跟數量有一定的認知之後玩會比較上手。在孩子本來就已經知道的情況下，來加強邏輯配對的能力。透過玩中來學習，反而會學得更快！...<span class="more"
+                (click)="goLink('https://annybear.com/littlesun/')">more</span></span>
+          </span>
+          <img src="assets/images/blog2.png">
+        </section>
+        <img class="dot" src="assets/images/dot.png">
+        <section class="block start">
+          <img src="assets/images/blog3.png">
+          <span class="content-block">
+            <span class="title-red">雙珵雙寶親子部落格</span>
+            <span class="title-blue">用圖卡，自然學習無壓力</span>
+            <span class="content">這順序圖卡適合年紀是兩歲以上，想一想珵姊也是大約兩歲接觸拼圖，起初也是少量片數開始完成，可以增強孩子自信心...<span class="more" (click)="goLink('http://haga4772.pixnet.net/blog/post/67097292-%E3%80%90%E8%A6%AA%E5%AD%90%E6%95%99%E5%85%B7%E6%8E%A8%E8%96%A6%E3%80%91%E2%97%8E%E2%97%8E%E7%90%86%E7%89%B9%E5%B0%9A%E5%B9%BC%E5%85%92%E5%9C%96%E5%8D%A1%E6%95%99%E5%85%B7%E2%97%8E')">more</span></span>
+          </span>
+        </section>
+      </span>
+    </div>
+    <div class="animal">
+      <img src="assets/images/bear.png">
+      <img src="assets/images/deer.png">
+    </div>
+  </div>
+</div>
