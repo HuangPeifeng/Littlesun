@@ -1,0 +1,133 @@
+.header-layout {
+  position: fixed;
+  top: 0;
+  width: calc(100vw - 100px);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 3px solid #ffae3e;
+  padding: 0 50px;
+  color: #ffae3e;
+  background-color: #ffffff;
+  z-index: 100;
+
+  @media only screen and (max-width: 480px) {
+    width: calc(100vw - 20px);
+    padding: 0 10px;
+  }
+
+  .header-logo {
+    padding: 10px 0;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .header-links {
+    width: 100%;
+    // font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a {
+      margin: 0 1em;
+      color: #ffae3e;
+      text-decoration: none;
+      transition: .3s ease-in-out;
+      border-bottom: 1px solid;
+
+      &:active {
+        color: #ffae3e;
+      }
+
+      &:hover {
+        text-shadow: 3px 3px 3px #cccccc;
+        padding: 5px 0;
+      }
+    }
+
+    img {
+      width: 40px;
+      margin: 0 1em;
+      cursor: pointer;
+    }
+  }
+
+  .breadcrumbs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+      height: 3px;
+      width: 30px;
+      margin: 3px 0;
+      background-color: #ffae3e;
+    }
+  }
+}
+
+.menu {
+  z-index: 101;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background-color: #ffae3e;
+  width: 250px;
+  height: 100vh;
+  transition: all .3s ease-in-out;
+
+  &.show {
+    right: 0px;
+  }
+
+  .breadcrumbs-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .breadcrumbs {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      cursor: pointer;
+      padding: 25px;
+
+      span {
+        height: 3px;
+        width: 30px;
+        margin: 3px 0;
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  .header-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.2em;
+    // font-weight: bold;
+    line-height: 3;
+    padding: 0 25px;
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+
+      &:active {
+        color: #ffffff;
+      }
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+}
