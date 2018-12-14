@@ -26,7 +26,7 @@ export class ParentChildComponent implements OnInit {
       this.allImg = false;
       this.twoImg = false;
       this.threeImg = true;
-    } else if (document.body.offsetWidth <= 768) {
+    } else if (document.body.offsetWidth < 768) {
       this.allImg = false;
       this.twoImg = true;
       this.threeImg = false;
